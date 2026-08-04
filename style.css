@@ -8,6 +8,10 @@ body {
     background-color: var(--bg-main);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 :root {
     --bg-main: #120d31;
@@ -172,7 +176,7 @@ header {
     transform: rotate(6deg);
 }
 
-.vinil-main{
+.vinil-main {
     position: absolute;
     right: 1570px;
     top: 570px;
@@ -180,13 +184,14 @@ header {
     opacity: 0.4;
     animation: rotate1 20s linear infinite;
 }
-@keyframes rotate1{
 
-    from{
+@keyframes rotate1 {
+
+    from {
         transform: rotate(0deg);
     }
 
-    to{
+    to {
         transform: rotate(360deg);
     }
 }
@@ -255,4 +260,57 @@ header {
     to {
         transform: rotate(360deg);
     }
+}
+
+.Trends-Gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.Trends-Gallery h1 {
+    font-size: 55px;
+    font-weight: 600;
+    margin: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.Trends-Gallery h1 span {
+    color: var(--accent-secondary);
+}
+
+.Trends-Gallery h2 {
+    font-size: 55px;
+    font-weight: 600;
+    margin: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.trends-gallery-text .trends-gallery-text-color {
+    color: var(--accent-secondary);
+}
+
+.trends-gallery-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 800px;
+    margin-left: 100px;
+    padding: 16px;
+}
+
+.trends-gallery-imgs img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.trends-gallery-imgs img:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
