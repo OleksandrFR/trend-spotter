@@ -1,16 +1,17 @@
-const navList = document.getElementById('navList');
-const indicator = document.getElementById('navIndicator');
-const links = navList.querySelectorAll('a');
+const modal = document.getElementById("modal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.querySelector(".close");
 
-links.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    const rect = link.getBoundingClientRect();
-    const navRect = navList.getBoundingClientRect();
-    indicator.style.left = (rect.left - navRect.left) + 'px';
-    indicator.style.width = rect.width + 'px';
-  });
-});
+openBtn.onclick = () => {
+    modal.classList.add("active");
+};
 
-navList.addEventListener('mouseleave', () => {
-  indicator.style.width = '0';
-});
+closeBtn.onclick = () => {
+    modal.classList.remove("active");
+};
+
+modal.onclick = (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("active");
+    }
+};

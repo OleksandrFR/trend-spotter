@@ -10,20 +10,25 @@
 
 <body>
     <header>
-        <h1 class="logo-text">TRENDSPOTTER</h1>
+        <h1 class="logo-text" id="home"> <span>TREND</span>SPOTTER</h1>
         <nav class="navigation">
             <ul class="navigation-list">
                 <li><a href="#trends">TRENDS</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">DROPS</a></li>
-                <li><a href="#">EVOLUTION</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#decades">DECADES</a></li>
+                <li><a href="#form">JOIN</a></li>
             </ul>
         </nav>
-        <ul class="header-socials">
-            <li><a href="#">I</a></li>
-            <li><a href="#">In</a></li>
-            <li><a href="#">X</a></li>
-        </ul>
+        <button id="openModal" class="header-button">Explore</button>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2>Secret Drop</h2>
+                <p>sadasdasd</p>
+            </div>
+        </div>
     </header>
     <main>
         <section class="hero-section">
@@ -61,7 +66,7 @@
             </div>
         </section>
 
-        <section class="Trends-Gallery">
+        <section class="Trends-Gallery" id="gallery">
             <h1 class="trends-gallery-title"> <span class="trends-gallery-title-color">Music Through</span> the Decades
             </h1>
             <h2 class="trends-gallery-text">Take a visual journey through <span class="trends-gallery-text-color">the
@@ -120,7 +125,8 @@
 
         </section>
 
-        <section class="comparison">
+        <section class="comparison" id="decades">
+            <h1 class="comparison-title"> <span class="comparison-title-color">Decade</span> Comparison</h1>
             <table class="tables">
                 <thead>
                     <tr>
@@ -138,7 +144,8 @@
                         <td>Grunge, Hip-Hop</td>
                         <td>CD Players</td>
                         <td>Nirvana</td>
-                        <td><a href="https://youtu.be/hTWKbfoikeg?si=Ivf1YHm3juhZ4dNc" class="example-link" target="_blank">Example</a></td>
+                        <td><a href="https://youtu.be/hTWKbfoikeg?si=Ivf1YHm3juhZ4dNc" class="example-link"
+                                target="_blank">Example</a></td>
                     </tr>
 
                     <tr>
@@ -146,7 +153,8 @@
                         <td>Pop, R&B</td>
                         <td>MP3 Players</td>
                         <td>Eminem</td>
-                        <td><a href="https://youtu.be/uelHwf8o7_U?si=KGH5e38RizkZWA1O" class="example-link" target="_blank">Example</a></td>
+                        <td><a href="https://youtu.be/uelHwf8o7_U?si=KGH5e38RizkZWA1O" class="example-link"
+                                target="_blank">Example</a></td>
                     </tr>
 
                     <tr>
@@ -154,7 +162,8 @@
                         <td>EDM, Trap</td>
                         <td>Streaming Services</td>
                         <td>Drake</td>
-                        <td><a href="https://youtu.be/xpVfcZ0ZcFM?si=8qUqgDGMyH9qLUnV" class="example-link" target="_blank">Example</a></td>
+                        <td><a href="https://youtu.be/xpVfcZ0ZcFM?si=8qUqgDGMyH9qLUnV" class="example-link"
+                                target="_blank">Example</a></td>
                     </tr>
 
                     <tr>
@@ -162,40 +171,70 @@
                         <td>HyperPop, Indie</td>
                         <td>AI & Short Videos</td>
                         <td>Taylor Swift</td>
-                        <td><a href="https://youtu.be/e-ORhEE9VVg?si=BSetv2aMlz9Q1VId" class="example-link" target="_blank">Example</a></td>
+                        <td><a href="https://youtu.be/e-ORhEE9VVg?si=BSetv2aMlz9Q1VId" class="example-link"
+                                target="_blank">Example</a></td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section class="forms">
-            <h1 class="form-title"><span>Join</span>The Movement</h1>
-            <h2 class="form-text">Become part of our community and stay updated on the latest trends,
-                legendary songs, and future music movements.</h2>text
+        <section class="forms" id="form">
+            <div class="form-content">
+                <h1 class="form-title"><span>Join</span>The Movement</h1>
+                <h2 class="form-text">Become part of our <span>community and stay updated</span> on the latest trends,
+                    legendary songs, and future <span>music movements.</span></h2>
+            </div>
             <form class="form">
-                <label for="text">FULL NAME</label>
-                <input type="text" placeholder="Alex Rivera">
+                <label for="text" class="form-label">FULL NAME</label>
+                <input type="text" placeholder="Alex Rivera" class="form-input">
 
-                <label for="email">EMAIL ADDRESS</label>
-                <input type="text" placeholder="alex@solarium.com">
+                <label for="email" class="form-label">EMAIL ADDRESS</label>
+                <input type="email" placeholder="alex@solarium.com" class="form-input">
                 <button class="form-button">AUTHENTICATE PROFILE</button>
             </form>
         </section>
 
     </main>
     <footer>
-        <section class="footer">
-            <h1 class="footer-title">TRENDSPOTTER</h1>
-            <ul class="footer-socials">
-                <li>Instagram</li>
-                <li>X</li>
-                <li>FaceBook</li>
-                <li>Discord</li>
-            </ul>
+        <div class="footer-container">
 
-            <p class="footer-text">&copy;2026 TRENDSPOTTER CURATED IN LIGHT.</p>
-        </section>
+            <div class="footer-column">
+                <h2> <span>TREND</span> SPOTTER</h2>
+                <p>Discover the latest music trends...</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#decades">DECADES</a></li>
+                    <li><a href="#form">JOIN</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">X</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Discord</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>hello@trendspotter.com</p>
+                <p>+1 (555) 123-4567</p>
+                <p>Los Angeles, CA</p>
+            </div>
+
+        </div>
     </footer>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
