@@ -225,7 +225,7 @@ header h1 span {
 
 .vinil-main {
     position: absolute;
-    right: 1570px;
+    right: 1460px;
     top: 570px;
     width: 700px;
     opacity: 0.4;
@@ -277,6 +277,8 @@ header h1 span {
     color: var(--accent-primary);
     letter-spacing: 1px;
 }
+
+
 
 .trends-img-main {
     position: relative;
@@ -892,8 +894,7 @@ footer{
 
     .vinil-main {
         width: 260px;
-        left: -60px;
-        top: -40px;
+        left: 60px;
     }
 
     .vinil {

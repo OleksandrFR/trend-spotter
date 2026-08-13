@@ -10,8 +10,8 @@
 
 <body>
     <header>
-        <div class="container">
-            <h1 class="logo-text" id="home"> <span>TREND</span>SPOTTER</h1>
+        <div class="container" id="home">
+            <h1 class="logo-text"> <span>TREND</span>SPOTTER</h1>
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li><a href="#trends">TRENDS</a></li>
@@ -60,7 +60,8 @@
                     </div>
 
                     <div class="modal-actions">
-                        <button class="modal-btn primary">Play Now</button>
+                        <button class="modal-btn primary" onclick="window.open('http://127.0.0.1:5000'), '_blank'">Play
+                            Now</button>
                         <button class="modal-btn secondary">Save Playlist</button>
                     </div>
 
@@ -117,7 +118,7 @@
 
 
                 <div class="trends-gallery-imgs">
-                    <div class="trends-gallery-first-section card">
+                    <article class="trends-gallery-first-section card">
                         <img src="img/photo_2026-08-05_00-59-33.jpg" alt="" class="s1">
                         <h1>1990s</h1>
                         <p>The Rise of Alternative Rock</p>
@@ -127,9 +128,9 @@
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
-                    </div>
+                    </article>
 
-                    <div class="trends-gallery-second-section card">
+                    <article class="trends-gallery-second-section card">
                         <img src="img/photo_2026-08-05_00-59-36.jpg" alt="" class="s2">
                         <h1>2000s</h1>
                         <p>The Rise of Pop and R&B</p>
@@ -139,9 +140,9 @@
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
-                    </div>
+                    </article>
 
-                    <div class="trends-gallery-third-section card">
+                    <article class="trends-gallery-third-section card">
                         <img src="img/photo_2026-08-05_00-59-39.jpg" alt="" class="s3">
                         <h1>2010s</h1>
                         <p>The Age of Streaming</p>
@@ -151,9 +152,9 @@
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
-                    </div>
+                    </article>
 
-                    <div class="trends-gallery-fourth-section card">
+                    <article class="trends-gallery-fourth-section card">
                         <img src="img/photo_2026-08-05_00-59-42.jpg" alt="" class="s4">
                         <h1>2020s</h1>
                         <p>The Age of AI and Short Videos</p>
@@ -163,8 +164,8 @@
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
-                    </div>
-
+                    </article>
+                </div>
             </section>
 
             <section class="comparison" id="decades">
