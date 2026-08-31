@@ -999,13 +999,16 @@ footer {
     .navigation {
         width: 100%;
         max-width: 1200px;
-
+        
     }
 
     .navigation-list {
         flex-wrap: wrap;
         gap: 10px;
         margin: 0 auto;
+    }
+    .header-button{
+        margin-right: 40px;
     }
 
     .logo-text {
