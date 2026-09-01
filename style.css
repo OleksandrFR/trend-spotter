@@ -2,6 +2,7 @@
     color: var(--text-main);
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -303,7 +304,7 @@ header h1 span {
     position: absolute;
     width: 250px;
 
-    left: -55px;
+    left: -20px;
     bottom: -55px;
 
     z-index: 5;
@@ -851,6 +852,25 @@ footer {
     border-color: rgba(61, 220, 132, 0.28);
 }
 
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .trends-text {
+        font-size: 25px;
+    }
+
+    .hero-image {
+        flex: 1;
+    }
+
+    .second-image {
+        right: 0;
+    }
+}
+
 /* ADAPTIVE */
 @media (max-width: 1024px) {
     .container {
@@ -907,6 +927,25 @@ footer {
         font-size: 50px;
     }
 
+    .navigation {
+        display: none;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        width: 41%;
+    }
+
+    .footer-column:nth-child(2) {
+        order: 1;
+    }
+
+    .footer-column:nth-child(3) {
+        order: 2;
+    }
 }
 
 @media (max-width: 768px) {
@@ -984,6 +1023,23 @@ footer {
         gap: 15px;
         margin-left: 10px;
     }
+
+    form {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .table-wrap {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .tables {
+        width: 700px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -999,7 +1055,7 @@ footer {
     .navigation {
         width: 100%;
         max-width: 1200px;
-        
+
     }
 
     .navigation-list {
@@ -1007,7 +1063,8 @@ footer {
         gap: 10px;
         margin: 0 auto;
     }
-    .header-button{
+
+    .header-button {
         margin-right: 40px;
     }
 
@@ -1015,13 +1072,14 @@ footer {
         font-size: 20px;
     }
 
-    h1 {
-        font-size: 30px;
+    .hero-content h1 {
+        font-size: 52px;
     }
 
-    h2 {
-        font-size: 30px;
+    .hero-content h2 {
+        font-size: 28px;
     }
+
 
     .vinil-main {
         position: absolute;
@@ -1042,10 +1100,16 @@ footer {
         margin-right: 40px;
     }
 
+    .trends-title-color {
+        font-size: 36px;
+    }
+
+
     .trends,
     .trends-text {
         text-align: center;
         margin: 0 auto;
+        font-size: 30px;
     }
 
     .trends-img-main {
@@ -1054,24 +1118,7 @@ footer {
     }
 
     .vinil {
-        width: 200px;
-    }
-
-    .comparison {
-        margin-left:2px ;
-        width: 100%;
-        max-width: 300px;
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-
-.tables {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 5px;
-        margin: 0 auto;
-        box-sizing: border-box;
-        overflow: hidden;
+        width: 180px;
     }
 
     .tables table {
@@ -1095,15 +1142,57 @@ footer {
     .Trends-Gallery {
         flex-wrap: wrap;
         text-align: center;
-        margin: 10px auto;
+        margin: 15px auto;
         padding: 15px;
         gap: 15px;
     }
 
+    .Trends-Gallery h1 {
+        font-size: 47px;
+        font-weight: 600;
+        margin-top: 100px;
+    }
+
+    .trends-gallery-title-color {
+        font-size: 47px;
+    }
+
+    .Trends-Gallery h2 {
+        font-size: 43px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+
+    .trends-gallery-text-color {
+        font-size: 43px;
+    }
+
+    .comparison {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+    }
+
     .form {
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
         margin: 0 auto;
+    }
+    .form-input {
+        width: 100%;
+        height: 40px;
+    }
+    .form-content h1 {
+        font-size: 40px;
+        margin: 100px auto;
+    }
+    .form-content h2 {
+        font-size: 40px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .footer-container {
@@ -1112,6 +1201,6 @@ footer {
 
     .footer-column {
         gap: 15px;
-        margin-left: 10px;
+        margin-left: 50px;
     }
 }
