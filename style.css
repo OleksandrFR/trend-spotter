@@ -49,6 +49,9 @@ header {
     background-color: var(--bg-surface);
     border-bottom: 1px solid var(--border);
 }
+.burger{
+    display: none;
+}
 
 
 header .container {
@@ -877,6 +880,33 @@ footer {
         max-width: 90%;
     }
 
+    .navigation{
+        display: none;
+    }
+    .navigation.is-open{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        color: var(--accent-primary);
+        text-align: center;
+        padding: 10px;
+        width: 200px;
+        font-size: xx-large;
+        background-color: var(--bg-surface);
+        transition: 0.3s ease;
+    }
+    .burger:hover{
+        transition: 0.3s ease;
+        transform: scale(1.1);
+        color:#000;
+        background-color: var(--accent-primary);
+
+    }
+
     .vinil-main {
         position: absolute;
         width: 400px;
@@ -958,9 +988,30 @@ footer {
         box-sizing: border-box;
     }
 
-    .navigation {
-        width: 100%;
-        max-width: 1200px;
+    .navigation{
+        display: none;
+    }
+    .navigation.is-open{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        color: var(--accent-primary);
+        text-align: center;
+        padding: 10px;
+        width: 200px;
+        font-size: xx-large;
+        background-color: var(--bg-surface);
+        transition: 0.3s ease;
+    }
+    .burger:hover{
+        transition: 0.3s ease;
+        transform: scale(1.1);
+        color:#000;
+        background-color: var(--accent-primary);
 
     }
 
@@ -1040,6 +1091,8 @@ footer {
     .tables {
         width: 700px;
     }
+
+   
 }
 
 @media (max-width: 480px) {
@@ -1052,10 +1105,8 @@ footer {
         box-sizing: border-box;
     }
 
-    .navigation {
-        width: 100%;
-        max-width: 1200px;
-
+     .navigation{
+        display: flex;
     }
 
     .navigation-list {
@@ -1203,4 +1254,6 @@ footer {
         gap: 15px;
         margin-left: 50px;
     }
+
+    
 }
