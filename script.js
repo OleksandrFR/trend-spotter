@@ -4,6 +4,8 @@ const closeBtn = document.querySelector(".close");
 const burger = document.querySelector('.burger');
 const navigation = document.querySelector('.navigation');
 
+
+
 openBtn.onclick = () => {
     modal.classList.add("active");
 };
